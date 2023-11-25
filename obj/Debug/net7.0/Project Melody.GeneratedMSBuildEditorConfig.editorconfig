@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Project_Melody
-build_property.ProjectDir = E:\Development\CSharp\Project Melody\Project Melody\
+build_property.ProjectDir = E:\SourceTreeRepositories\projectMelody\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

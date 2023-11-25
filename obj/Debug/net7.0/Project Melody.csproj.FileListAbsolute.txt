@@ -16,3 +16,22 @@ E:\Development\CSharp\Project Melody\Project Melody\obj\Debug\net7.0\refint\Proj
 E:\Development\CSharp\Project Melody\Project Melody\obj\Debug\net7.0\Project Melody.pdb
 E:\Development\CSharp\Project Melody\Project Melody\obj\Debug\net7.0\Project Melody.genruntimeconfig.cache
 E:\Development\CSharp\Project Melody\Project Melody\obj\Debug\net7.0\ref\Project Melody.dll
+E:\SourceTreeRepositories\projectMelody\bin\Debug\net7.0\Project Melody.exe
+E:\SourceTreeRepositories\projectMelody\bin\Debug\net7.0\Project Melody.deps.json
+E:\SourceTreeRepositories\projectMelody\bin\Debug\net7.0\Project Melody.runtimeconfig.json
+E:\SourceTreeRepositories\projectMelody\bin\Debug\net7.0\Project Melody.dll
+E:\SourceTreeRepositories\projectMelody\bin\Debug\net7.0\Project Melody.pdb
+E:\SourceTreeRepositories\projectMelody\bin\Debug\net7.0\NAudio.Core.dll
+E:\SourceTreeRepositories\projectMelody\bin\Debug\net7.0\NAudio.Midi.dll
+E:\SourceTreeRepositories\projectMelody\obj\Debug\net7.0\Project Melody.csproj.AssemblyReference.cache
+E:\SourceTreeRepositories\projectMelody\obj\Debug\net7.0\Project Melody.GeneratedMSBuildEditorConfig.editorconfig
+E:\SourceTreeRepositories\projectMelody\obj\Debug\net7.0\Project Melody.AssemblyInfoInputs.cache
+E:\SourceTreeRepositories\projectMelody\obj\Debug\net7.0\Project Melody.AssemblyInfo.cs
+E:\SourceTreeRepositories\projectMelody\obj\Debug\net7.0\Project Melody.csproj.CoreCompileInputs.cache
+E:\SourceTreeRepositories\projectMelody\obj\Debug\net7.0\Project Melody.sourcelink.json
+E:\SourceTreeRepositories\projectMelody\obj\Debug\net7.0\Project Melody.csproj.CopyComplete
+E:\SourceTreeRepositories\projectMelody\obj\Debug\net7.0\Project Melody.dll
+E:\SourceTreeRepositories\projectMelody\obj\Debug\net7.0\refint\Project Melody.dll
+E:\SourceTreeRepositories\projectMelody\obj\Debug\net7.0\Project Melody.pdb
+E:\SourceTreeRepositories\projectMelody\obj\Debug\net7.0\Project Melody.genruntimeconfig.cache
+E:\SourceTreeRepositories\projectMelody\obj\Debug\net7.0\ref\Project Melody.dll

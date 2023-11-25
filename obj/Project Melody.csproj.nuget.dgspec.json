@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Development\\CSharp\\Project Melody\\Project Melody\\Project Melody.csproj": {}
+    "E:\\SourceTreeRepositories\\projectMelody\\Project Melody.csproj": {}
   },
   "projects": {
-    "E:\\Development\\CSharp\\Project Melody\\Project Melody\\Project Melody.csproj": {
+    "E:\\SourceTreeRepositories\\projectMelody\\Project Melody.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Development\\CSharp\\Project Melody\\Project Melody\\Project Melody.csproj",
+        "projectUniqueName": "E:\\SourceTreeRepositories\\projectMelody\\Project Melody.csproj",
         "projectName": "Project Melody",
-        "projectPath": "E:\\Development\\CSharp\\Project Melody\\Project Melody\\Project Melody.csproj",
+        "projectPath": "E:\\SourceTreeRepositories\\projectMelody\\Project Melody.csproj",
         "packagesPath": "C:\\Users\\jglov\\.nuget\\packages\\",
-        "outputPath": "E:\\Development\\CSharp\\Project Melody\\Project Melody\\obj\\",
+        "outputPath": "E:\\SourceTreeRepositories\\projectMelody\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

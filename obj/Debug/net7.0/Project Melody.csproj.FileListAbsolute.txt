@@ -1,0 +1,18 @@
+E:\Development\CSharp\Project Melody\Project Melody\bin\Debug\net7.0\Project Melody.exe
+E:\Development\CSharp\Project Melody\Project Melody\bin\Debug\net7.0\Project Melody.deps.json
+E:\Development\CSharp\Project Melody\Project Melody\bin\Debug\net7.0\Project Melody.runtimeconfig.json
+E:\Development\CSharp\Project Melody\Project Melody\bin\Debug\net7.0\Project Melody.dll
+E:\Development\CSharp\Project Melody\Project Melody\bin\Debug\net7.0\Project Melody.pdb
+E:\Development\CSharp\Project Melody\Project Melody\bin\Debug\net7.0\NAudio.Core.dll
+E:\Development\CSharp\Project Melody\Project Melody\bin\Debug\net7.0\NAudio.Midi.dll
+E:\Development\CSharp\Project Melody\Project Melody\obj\Debug\net7.0\Project Melody.csproj.AssemblyReference.cache
+E:\Development\CSharp\Project Melody\Project Melody\obj\Debug\net7.0\Project Melody.GeneratedMSBuildEditorConfig.editorconfig
+E:\Development\CSharp\Project Melody\Project Melody\obj\Debug\net7.0\Project Melody.AssemblyInfoInputs.cache
+E:\Development\CSharp\Project Melody\Project Melody\obj\Debug\net7.0\Project Melody.AssemblyInfo.cs
+E:\Development\CSharp\Project Melody\Project Melody\obj\Debug\net7.0\Project Melody.csproj.CoreCompileInputs.cache
+E:\Development\CSharp\Project Melody\Project Melody\obj\Debug\net7.0\Project Melody.csproj.CopyComplete
+E:\Development\CSharp\Project Melody\Project Melody\obj\Debug\net7.0\Project Melody.dll
+E:\Development\CSharp\Project Melody\Project Melody\obj\Debug\net7.0\refint\Project Melody.dll
+E:\Development\CSharp\Project Melody\Project Melody\obj\Debug\net7.0\Project Melody.pdb
+E:\Development\CSharp\Project Melody\Project Melody\obj\Debug\net7.0\Project Melody.genruntimeconfig.cache
+E:\Development\CSharp\Project Melody\Project Melody\obj\Debug\net7.0\ref\Project Melody.dll

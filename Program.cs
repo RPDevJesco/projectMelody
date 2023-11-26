@@ -1,20 +1,20 @@
 ﻿using Project_Melody.Instruments;
-using static ChordGenerator;
+using Project_Melody;
+using static Project_Melody.MusicBase;
 
-namespace Project_Melody
+class Program
 {
-    class Program
+    static void Main()
     {
-        static void Main()
+        try
         {
-            // Assuming standard MIDI timing, 120 Tempo using 120 ticks per quarter note
-            MidiChordSequenceGenerator midiChordSequenceGenerator = new MidiChordSequenceGenerator(120, 120);
-
-            // Example parameters: "Test.mid", root note C3, Shang scale, generating 12 chords, not arpeggio, not includeBothChordAndArpeggio
-            midiChordSequenceGenerator.GenerateMidiFile("Test1.mid", BasicNote.C, ScaleType.Zhi, false, false, InstrumentFactory.GetInstrument("6 String Guitar"), 12);
-            midiChordSequenceGenerator.GenerateMidiFile("Test2.mid", BasicNote.C, ScaleType.Zhi, false, false, InstrumentFactory.GetInstrument("6 String Guitar"), 12);
-            midiChordSequenceGenerator.GenerateMidiFile("Test3.mid", BasicNote.C, ScaleType.Zhi, true, false, InstrumentFactory.GetInstrument("6 String Guitar"), 4);
-            midiChordSequenceGenerator.GenerateMidiFile("Test4.mid", BasicNote.C, ScaleType.Zhi, true, true, InstrumentFactory.GetInstrument("6 String Guitar"), 4);
+            MidiGenerator.GenerateMidiFile("chord.mid", BasicNote.CSharp_DFlat, ScaleType.Shang, InstrumentFactory.GetInstrument("6 String Guitar"), 120, "chord", 4); // Increased number of notes to 10
+            MidiGenerator.GenerateMidiFile("arpeggio.mid", BasicNote.CSharp_DFlat, ScaleType.Shang, InstrumentFactory.GetInstrument("6 String Guitar"), 120, "arpeggio", 4); // Increased number of notes to 10
+            MidiGenerator.GenerateMidiFile("melody.mid", BasicNote.CSharp_DFlat, ScaleType.Shang, InstrumentFactory.GetInstrument("6 String Guitar"), 120, "melody", 35); // Increased number of notes to 10
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"An error occurred: {ex.Message}");
         }
     }
 }

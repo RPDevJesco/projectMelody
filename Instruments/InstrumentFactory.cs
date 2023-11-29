@@ -1,22 +1,29 @@
-﻿namespace Project_Melody.Instruments
+﻿using static ProjectMelodyLibrary.MusicBase;
+
+namespace ProjectMelodyLibrary.Instruments
 {
     public static class InstrumentFactory
     {
-        public static MusicalInstrument GetInstrument(string instrumentName)
+
+        public static IEnumerable<InstrumentType> GetAvailableInstruments()
         {
-            switch (instrumentName)
+            return Enum.GetValues(typeof(InstrumentType)).Cast<InstrumentType>();
+        }
+        public static MusicalInstrument GetInstrument(InstrumentType instrumentType)
+        {
+            switch (instrumentType)
             {
-                case "4 String Bass":
+                case InstrumentType.FourStringBass:
                     return new Bass4String();
-                case "5 String Bass":
+                case InstrumentType.FiveStringBass:
                     return new Bass5String();
-                case "6 String Guitar":
+                case InstrumentType.SixStringGuitar:
                     return new GuitarStandard6String();
-                case "7 String Guitar":
+                case InstrumentType.SevenStringGuitar:
                     return new GuitarStandard7String();
-                case "Piano":
+                case InstrumentType.Piano:
                     return new Piano();
-                case "Violin":
+                case InstrumentType.Violin:
                     return new Violin();
                 default:
                     throw new ArgumentException("Instrument not recognized");

@@ -1,6 +1,6 @@
-﻿using static Project_Melody.MusicBase;
+﻿using static ProjectMelodyLibrary.MusicBase;
 
-namespace Project_Melody
+namespace ProjectMelodyLibrary
 {
     public static class MelodyGenerator
     {
@@ -8,9 +8,8 @@ namespace Project_Melody
 
         public static List<int> GenerateMelody(BasicNote rootNote, ScaleType scaleType, int length, int minNote, int maxNote)
         {
-            Console.WriteLine("GenerateMelody called.");
             var originalScale = GenerateScale((int)rootNote, scaleType);
-            var adjustedScale = GetRandomNoteFromScale(originalScale, minNote, maxNote);
+            var adjustedScale = TransposeToInstrument(originalScale, minNote, maxNote);
             var melody = new List<int>();
 
             for (int i = 0; i < length; i++)
@@ -22,10 +21,56 @@ namespace Project_Melody
             return melody;
         }
 
-        private static List<int> GetRandomNoteFromScale(List<int> scale, int minNote, int maxNote)
+        public static List<int> GenerateMusicalPhrase(int startNote, int phraseLength, ScaleType scaleType, int length, int minNote, int maxNote)
         {
-            Console.WriteLine("GetRandomNoteFromScale called.");
+            var originalScale = GenerateScale(startNote, scaleType);
+            var phrase = new List<int>();
+            int currentNote = startNote;
 
+            // Adjusting the scale to fit the minNote and maxNote constraints
+            var adjustedScale = TransposeToInstrument(originalScale, minNote, maxNote);
+
+            int notesAdded = 0; // Count of notes added to the phrase
+
+            for (int i = 0; i < length; i++)
+            {
+                if (notesAdded < phraseLength)
+                {
+                    int nextNoteIndex = GetNextNoteIndex(adjustedScale, currentNote);
+                    int nextNote = adjustedScale[nextNoteIndex];
+
+                    // Add the next note to the phrase
+                    phrase.Add(nextNote);
+                    currentNote = nextNote;
+
+                    notesAdded++;
+                }
+                else
+                {
+                    // If the phrase length has been reached, do not add more notes
+                    break;
+                }
+            }
+
+            return phrase;
+        }
+
+        private static int GetNextNoteIndex(List<int> scale, int currentNote)
+        {
+            // Implement logic to select the next note index
+            // This could involve checking the current note, and based on it, deciding the next note
+            // You could use random selection but with constraints like limiting interval size, etc.
+
+            // Example: (Simple version)
+            int currentIndex = scale.IndexOf(currentNote);
+            int nextIndex = random.Next(Math.Max(0, currentIndex - 2), Math.Min(scale.Count, currentIndex + 3));
+            // This ensures that we mostly move stepwise, with occasional leaps
+
+            return nextIndex;
+        }
+
+        private static List<int> TransposeToInstrument(List<int> scale, int minNote, int maxNote)
+        {
             // Adjust the scale notes to fit within the instrument's range
             var adjustedScale = new List<int>(scale);
 

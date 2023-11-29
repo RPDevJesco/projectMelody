@@ -1,7 +1,20 @@
-﻿namespace Project_Melody
+﻿namespace ProjectMelodyLibrary
 {
     public static class MusicBase
     {
+        /// <summary>
+        /// Available instruments
+        /// </summary>
+        public enum InstrumentType
+        {
+            FourStringBass,
+            FiveStringBass,
+            SixStringGuitar,
+            SevenStringGuitar,
+            Piano,
+            Violin
+        }
+
         /// <summary>
         /// Names of all the scale types this application can utilizie
         /// </summary>
@@ -115,18 +128,44 @@
         /// </summary>
         public static List<List<int>> rhythmPatterns = new List<List<int>>
         {
+            // All whole notes
+            new List<int> { 1920 },
+            // dotted half note
+            new List<int> { 1440, 480},
+            new List<int> { 480, 1440},
+            // All Half notes
+            new List<int> { 960, 960 },
+            // quarter and Half notes
+            new List<int> { 480, 480, 960 },
+            new List<int> { 960, 480, 480 },
+            new List<int> { 480, 960, 480 },
             // All quarter notes
             new List<int> { 480, 480, 480, 480 },
             // All eighth notes
             new List<int> { 240, 240, 240, 240, 240, 240, 240, 240 },
             // Mixed quarter and eighth notes
             new List<int> { 480, 240, 240, 480, 240, 240 },
-            // Mix of sixteenth (120 ticks) and eighth notes (240 ticks)
-            //new List<int> { 120, 240, 120, 240, 120, 240, 120, 240 },
-            // Mix of quarter (480 ticks), eighth (240 ticks), and sixteenth notes (120 ticks)
-            //new List<int> { 480, 240, 120, 240, 120, 480, 240, 120 },
-            // All sixteenth notes (120 ticks each)
-            //new List<int> { 120, 120, 120, 120, 120, 120, 120, 120 }
+            // Mixed quarter and eighth notes
+            new List<int> { 480, 480, 240, 240, 240, 240 },
+            // Mixed quarter and eighth notes
+            new List<int> { 240, 240, 240, 240, 480, 480 },
+            new List<int> { 240, 240, 240, 240, 240, 240, 480 },
+            new List<int> { 720, 240, 720, 240 },
+            new List<int> { 480, 720, 240 },
+            new List<int> { 240, 720, 480, 240 },
+            new List<int> { 1440, 240, 240 },
+            new List<int> { 120, 720, 120, 480, 120, 240 },
+            new List<int> { 720, 120, 120, 720 },
+            new List<int> { 480, 120, 120, 120, 1440 },
+            new List<int> { 720, 720, 480 },
+            new List<int> { 120, 1440, 120, 120, 120 },
+            new List<int> { 480, 240, 240, 240, 240, 240, 240 },
+            new List<int> { 240, 240, 240, 480, 240, 240, 240 },
+            new List<int> { 480,240,240,120,120,120,120,240,240,120,120,120,120 },
+            new List<int> { 480,120,120,480,120,120,480,120,120,480 },
+            new List<int> { 480,480,240,120,120,240,120,120,240 },
+            new List<int> { 480,240,120,120,240,480,120,120,240 },
+            new List<int> { 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120 },
         };
         public static List<int> GenerateScale(int rootNote, ScaleType scaleType)
         {
@@ -141,5 +180,30 @@
 
             return scale;
         }
+
+        public static List<List<int>> CommonProgressions = new List<List<int>>
+        {
+            new List<int> { 1, 4, 5, 1 }, // I-IV-V-I: This is one of the most fundamental and widely used sequences in Western music
+            new List<int> { 1, 5, 6, 4 }, // I-V-vi-IV: This is a very popular progression in modern music
+            new List<int> { 2, 5, 1 }, // ii-V-I: A fundamental progression in jazz
+            new List<int> { 6, 4, 1, 5 }, // vi-IV-I-V: Often used in pop music
+            new List<int> { 1, 6, 4, 5 }, // I-vi-IV-V: A classic doo-wop progression
+            new List<int> { 1, 4, 5 }, // I-IV-V: A basic progression often used in blues and rock
+            new List<int> { 1, 2, 4, 5 }, // I-ii-IV-V: A variation of the I-IV-V with an added ii degree
+            new List<int> { 1, 7, 6, 5 }, // i-bVII-bVI-V: A common minor progression
+            new List<int> { 1, 5, 6, 3, 4, 1, 4, 5 }, // I-V-vi-iii-IV-I-IV-V: A longer progression often found in pop ballads
+            new List<int> { 1, 4, 7, 3, 6, 2, 5, 1 }, // i-iv-VII-III-VI-ii°-V-i: A full diatonic cycle in a minor key
+            new List<int> { 1, 2, 3, 5 },
+            new List<int> { 6, 7, 1 }, // Flat VI - Flat VII - I Progression
+            new List<int> { 1, 4, 6, 5 },
+            new List<int> { 3, 6, 2, 5 },
+            new List<int> { 1, 7, 6, 5 }, // chromatic Descent Progression
+            new List<int> { 1, 6, 3, 7}, // Modal Interchange Progression
+            new List<int> { 1, 4, 7, 3 }, // Ascending Fourth Progression
+            new List<int> { 1, 1, 1, 1 }, // Line Cliché Progression
+            new List<int> { 1, 2, 3, 4 }, // Whole Tone Progression
+            new List<int> { 5, 2, 5, 1 }, // Secondary Dominant Series
+            new List<int> { 1, 4, 6, 3 } // Minor Key Shift Progression
+        };
     }
 }

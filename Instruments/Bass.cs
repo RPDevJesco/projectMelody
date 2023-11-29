@@ -1,4 +1,4 @@
-﻿namespace Project_Melody.Instruments
+﻿namespace ProjectMelodyLibrary.Instruments
 {
     public class Bass4String : MusicalInstrument
     {

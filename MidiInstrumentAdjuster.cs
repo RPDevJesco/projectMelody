@@ -1,6 +1,6 @@
 ﻿using NAudio.Midi;
 
-namespace Project_Melody
+namespace ProjectMelodyLibrary
 {
     public class MidiInstrumentAdjuster
     {

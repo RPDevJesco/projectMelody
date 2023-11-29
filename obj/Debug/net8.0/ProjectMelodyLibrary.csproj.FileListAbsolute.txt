@@ -1,0 +1,12 @@
+E:\Development\ProjectMelodyMaui\ProjectMelodyLibrary\bin\Debug\net8.0\ProjectMelodyLibrary.deps.json
+E:\Development\ProjectMelodyMaui\ProjectMelodyLibrary\bin\Debug\net8.0\ProjectMelodyLibrary.dll
+E:\Development\ProjectMelodyMaui\ProjectMelodyLibrary\bin\Debug\net8.0\ProjectMelodyLibrary.pdb
+E:\Development\ProjectMelodyMaui\ProjectMelodyLibrary\obj\Debug\net8.0\ProjectMelodyLibrary.csproj.AssemblyReference.cache
+E:\Development\ProjectMelodyMaui\ProjectMelodyLibrary\obj\Debug\net8.0\ProjectMelodyLibrary.GeneratedMSBuildEditorConfig.editorconfig
+E:\Development\ProjectMelodyMaui\ProjectMelodyLibrary\obj\Debug\net8.0\ProjectMelodyLibrary.AssemblyInfoInputs.cache
+E:\Development\ProjectMelodyMaui\ProjectMelodyLibrary\obj\Debug\net8.0\ProjectMelodyLibrary.AssemblyInfo.cs
+E:\Development\ProjectMelodyMaui\ProjectMelodyLibrary\obj\Debug\net8.0\ProjectMelodyLibrary.csproj.CoreCompileInputs.cache
+E:\Development\ProjectMelodyMaui\ProjectMelodyLibrary\obj\Debug\net8.0\ProjectMelodyLibrary.dll
+E:\Development\ProjectMelodyMaui\ProjectMelodyLibrary\obj\Debug\net8.0\refint\ProjectMelodyLibrary.dll
+E:\Development\ProjectMelodyMaui\ProjectMelodyLibrary\obj\Debug\net8.0\ProjectMelodyLibrary.pdb
+E:\Development\ProjectMelodyMaui\ProjectMelodyLibrary\obj\Debug\net8.0\ref\ProjectMelodyLibrary.dll

@@ -124,6 +124,32 @@
         };
 
         /// <summary>
+        /// Chords should have their own separate rhythm patterns. They don't need eighth notes and below.
+        /// </summary>
+        public static List<List<int>> chordRhythmPatterns = new List<List<int>>
+        {
+            // All whole notes
+            new List<int> { 1920 },
+            // dotted half note
+            new List<int> { 1440, 480},
+            new List<int> { 480, 1440},
+            // All Half notes
+            new List<int> { 960, 960 },
+            // quarter and Half notes
+            new List<int> { 480, 480, 960 },
+            new List<int> { 960, 480, 480 },
+            new List<int> { 480, 960, 480 },
+            // All quarter notes
+            new List<int> { 480, 480, 480, 480 },
+            // dotted eighth notes with quarter
+            new List<int> { 360, 360, 360, 360, 360, 480 },
+            new List<int> { 360, 360, 360, 360, 480, 360 },
+            new List<int> { 360, 360, 480, 360, 360, 360 },
+            new List<int> { 360, 480, 360, 360, 360, 360 },
+            new List<int> { 480, 360, 360, 360, 360, 360 }
+        };
+
+        /// <summary>
         /// Patterns of note lengths to generate rhythms.
         /// </summary>
         public static List<List<int>> rhythmPatterns = new List<List<int>>
@@ -141,6 +167,20 @@
             new List<int> { 480, 960, 480 },
             // All quarter notes
             new List<int> { 480, 480, 480, 480 },
+            // dotted eighth notes with a sixteenth
+            new List<int> { 360, 360, 360, 360, 360, 360, 120 },
+            new List<int> { 360, 360, 360, 360, 360, 120, 360 },
+            new List<int> { 360, 360, 360, 360, 120, 360, 360 },
+            new List<int> { 360, 360, 360, 120, 360, 360, 360 },
+            new List<int> { 360, 360, 120, 360, 360, 360, 360 },
+            new List<int> { 360, 120, 360, 360, 360, 360, 360 },
+            new List<int> { 120, 360, 360, 360, 360, 360, 360 },
+            // dotted eighth notes with quarter
+            new List<int> { 360, 360, 360, 360, 360, 480 },
+            new List<int> { 360, 360, 360, 360, 480, 360 },
+            new List<int> { 360, 360, 480, 360, 360, 360 },
+            new List<int> { 360, 480, 360, 360, 360, 360 },
+            new List<int> { 480, 360, 360, 360, 360, 360 },
             // All eighth notes
             new List<int> { 240, 240, 240, 240, 240, 240, 240, 240 },
             // Mixed quarter and eighth notes
@@ -166,6 +206,14 @@
             new List<int> { 480,480,240,120,120,240,120,120,240 },
             new List<int> { 480,240,120,120,240,480,120,120,240 },
             new List<int> { 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120 },
+            new List<int> { 120, 240, 60 },
+            new List<int> { 120, 1440, 120, 240 },
+            new List<int> { 480, 240, 60, 120 },
+            new List<int> { 960, 240, 120, 120 },
+            new List<int> { 60, 1440, 60, 300, 60 },
+            new List<int> { 240, 240, 240, 480, 480, 480 },
+            // All thirty-second notes
+            new List<int> { 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60 }
         };
         public static List<int> GenerateScale(int rootNote, ScaleType scaleType)
         {
